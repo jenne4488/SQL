@@ -1,0 +1,13 @@
+CREATE TABLE sweaters (item INTEGER PRIMARY KEY, quantity INTEGER, color INTEGER, design INTEGER, price INTEGER);
+INSERT INTO sweaters VALUES (1, 2, "green", "mind", 60.00);
+INSERT INTO sweaters VALUES (2, 1, "blue", "sweet", 30.00);
+INSERT INTO sweaters VALUES (3, 1, "black", "Kind", 30.00);
+INSERT INTO sweaters VALUES (4, 1, "purple", "dream", 30.00);
+INSERT INTO sweaters VALUES (5, 1, "black", "happy", 30.00);
+INSERT INTO sweaters VALUES (6, 2, "green", "Human", 60.00);
+INSERT INTO sweaters VALUES (7, 2, "sand", "Wild", 60.00);
+INSERT INTO sweaters VALUES (8, 3, "green", "plans", 90.00);
+INSERT INTO sweaters VALUES (9, 1, "green", "mind", 30.00);
+INSERT INTO sweaters VALUES (10, 1, "blue", "sweet", 30.00);
+
+SELECT * FROM sweaters WHERE price < 90 ORDER BY price;
